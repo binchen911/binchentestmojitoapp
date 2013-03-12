@@ -1,0 +1,23 @@
+[
+  {
+    "settings": [ "master" ],
+
+    "root": {
+        "verbs": ["get"],
+        "path": "/",
+        "call": "frame.index"
+    },
+
+    "yahoo.application.binchentestmojitoapp": {
+        "verbs": ["get"],
+        "path": "/yahoo.application.binchentestmojitoapp/index.html",
+        "call": "frame.index"
+    },
+
+    "any mojit/action": {
+        "verbs": [ "GET" ],
+        "path": "/:module/:action",
+        "call": "{module}.{action}"
+    }
+  }
+]
